@@ -322,7 +322,15 @@ aws cloudwatch put-metric-alarm \
 
 
 
+### Demo screenshots
 
+Contributor Insights - Top unique contributors
+
+![image-20250331230915522](Images/unique-contributors.png)
+
+Sample Alarm E-Mail
+
+![image-20250331230547107](Images/email.png)
 
 
 
