@@ -272,7 +272,7 @@ aws lambda create-function \
   --zip-file fileb://function.zip \
   --handler process-alarm.handler \
   --runtime nodejs22.x \
-  --role arn:aws:iam::018700324583:role/ProcessAlarmRole \
+  --role arn:aws:iam::111122223333:role/ProcessAlarmRole \
   --timeout 10 \
   --environment "Variables={SNS_TOPIC_ARN=$DedicatedHostReportTopic,CONTRIBUTOR_INSIGHTS_RULE_NAME=$CONTRIBUTOR_INSIGHTS_RULE_NAME}"
 
