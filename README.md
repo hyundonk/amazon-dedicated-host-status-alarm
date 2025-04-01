@@ -306,10 +306,11 @@ aws sns subscribe \
 aws cloudwatch put-metric-alarm \
   --alarm-name "DedicatedHostsInsightsAlarm" \
   --alarm-description "Alarm when problematic hosts are detected" \
-  --evaluation-periods 1 \
+  --evaluation-periods 2 \
+  --datapoints-to-alarm 1 \
   --threshold 0 \
   --comparison-operator GreaterThanThreshold \
-  --treat-missing-data ignore \
+  --treat-missing-data notBreaching \
   --metrics '[{
     "Id": "m1",
     "Expression": "INSIGHT_RULE_METRIC(\"ProblematicHostsInsightsRule\", \"UniqueContributors\")",
